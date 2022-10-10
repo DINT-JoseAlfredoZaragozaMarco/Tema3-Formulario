@@ -18,7 +18,13 @@
             </DockPanel>
         </StackPanel>
         <Grid DockPanel.Dock="Right">
-            <Image Source="./assets/foto.jpg" Width="250"></Image>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="./assets/foto.jpg" Width="250" Stretch="Fill"></Image>
         </Grid>
         <StackPanel DockPanel.Dock="Left">
             <DockPanel>
