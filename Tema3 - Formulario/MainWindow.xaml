@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:Tema3___Formulario"
         mc:Ignorable="d"
         Title="Formulario" Height="450" Width="800">
+
     <DockPanel>
         <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold">Formulario</TextBlock>
         <StackPanel DockPanel.Dock="Bottom">
             <DockPanel LastChildFill="False">
                 <TextBlock FontSize="25">Jose Alfredo</TextBlock>
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
-                    <Button Margin="5" Width="100">Aceptar</Button>
-                    <Button Margin="5" Width="100">Cancelar</Button>
+                    <Button>Aceptar</Button>
+                    <Button>Cancelar</Button>
                 </StackPanel>
             </DockPanel>
         </StackPanel>
@@ -28,28 +29,28 @@
         </Grid>
         <StackPanel DockPanel.Dock="Left">
             <DockPanel>
-                <Border DockPanel.Dock="Top" BorderThickness="5" BorderBrush="Black" Margin="10" CornerRadius="5">
+                <Border DockPanel.Dock="Top" Style="{StaticResource Bordes}">
                     <StackPanel Background="#FF6BBCEA">
                         <DockPanel>
-                            <TextBlock DockPanel.Dock="Left" Margin="10" Width="55">Nombre</TextBlock>
-                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Height="25" ToolTip="Máximo 100 carácteres"></Image>
-                            <TextBox MinWidth="390" Margin="5"></TextBox>
+                            <TextBlock DockPanel.Dock="Left" Style="{StaticResource id}">Nombre</TextBlock>
+                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Style="{StaticResource ToolTip}" ToolTip="Máximo 100 carácteres"></Image>
+                            <TextBox></TextBox>
                         </DockPanel>
                         <DockPanel>
-                            <TextBlock DockPanel.Dock="Left" Margin="10" Width="55">Edad</TextBlock>
-                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Height="25" ToolTip="Número entre 0 y 100"></Image>
-                            <TextBox MinWidth="390" Margin="5"></TextBox>
+                            <TextBlock DockPanel.Dock="Left" Style="{StaticResource id}">Edad</TextBlock>
+                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Style="{StaticResource ToolTip}" ToolTip="Número entre 0 y 100"></Image>
+                            <TextBox></TextBox>
                         </DockPanel>
                         <DockPanel>
-                            <TextBlock DockPanel.Dock="Left" Margin="10" Width="55">Dirección</TextBlock>
-                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Height="25" ToolTip="Incluir el código postal"></Image>
-                            <TextBox MinWidth="390" Margin="5"></TextBox>
+                            <TextBlock DockPanel.Dock="Left" Style="{StaticResource id}">Dirección</TextBlock>
+                            <Image DockPanel.Dock="Right" Source="./assets/info.png" Style="{StaticResource ToolTip}" ToolTip="Incluir el código postal"></Image>
+                            <TextBox></TextBox>
                         </DockPanel>
                     </StackPanel>
                 </Border>
-                <Border BorderThickness="5" BorderBrush="Black" Margin="10" CornerRadius="5">
+                <Border Style="{StaticResource Bordes}">
                     <StackPanel Background="#FFEAB66B" Orientation="Horizontal">
-                        <GroupBox Header="Aficiones" Margin="5" FontSize="18">
+                        <GroupBox Header="Aficiones">
                             <StackPanel Orientation="Vertical">
                                 <CheckBox>Hacer deporte</CheckBox>
                                 <CheckBox>Viajar</CheckBox>
@@ -57,7 +58,7 @@
                                 <CheckBox>Leer cómics</CheckBox>
                             </StackPanel>
                         </GroupBox>
-                        <GroupBox Header="Estado Civil" Margin="5" FontSize="18">
+                        <GroupBox Header="Estado Civil">
                             <StackPanel Orientation="Vertical">
                                 <RadioButton IsChecked="True" GroupName="estadoCivil">Soltero</RadioButton>
                                 <RadioButton GroupName="estadoCivil">Casado</RadioButton>

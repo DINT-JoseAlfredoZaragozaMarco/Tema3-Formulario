@@ -4,6 +4,30 @@
              xmlns:local="clr-namespace:Tema3___Formulario"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Border" x:Key="Bordes">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style TargetType="Image" x:Key="ToolTip">
+            <Setter Property="Height" Value="25"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="id">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Width" Value="55"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="MinWidth" Value="390"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
     </Application.Resources>
 </Application>
